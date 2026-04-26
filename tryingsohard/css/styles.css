@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0; 
+    font-family: sans-serif; 
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E071A; 
+    background-position: center; 
+    background-size: cover; 
+}
+
+h1, h2 {
+    color: #F700FF; 
+    text-align: center;
+    margin-bottom: 15px; 
+    
+}
+
+
+#forms {
+   text-align: center;
+   /*  Centraliza TEXTO (não elementos)
+
+👉 Isso é importante:
+
+texto → text-align
+elementos → margin ou flex */
+   display: flex;
+   /* Ativa o Flexbox (layout moderno) */
+   flex-direction: column;
+   /* Organiza itens em coluna (vertical) */
+   align-items: center; 
+   /* Centraliza elementos horizontalmente dentro do flex */
+   max-width: 300px;
+   /* Limita a largura máxima
+
+👉 Evita que o formulário fique gigante */
+   margin: 0 auto; 
+}
+
+button {
+        background-color: #FDFDFD;
+        color: #102F5e;
+        border: 2px solid #102F5e;
+        padding: .3rem .6rem;
+        /* Espaço dentro do elemento
+
+👉 Faz o botão/input ficar mais confortável */
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        /* Faz o elemento ocupar a linha inteira
+
+👉 Permite usar margin: auto pra centralizar */
+        margin: 20px auto;
+        /* Espaço fora do elemento
+       👉 Tradução:
+        20px → espaço em cima/baixo
+        auto → centraliza horizontalmente */
+
+        /* ou 0 → sem margem vertical
+auto → centraliza horizontal
+
+👉 Muito usado pra centralizar containers */
+
+        transition: 0.4s;
+}
+
+button:hover {
+    background-color: #F700FF;
+    color: white;
+    border-color: #F700FF;
+}
+
+/* button:hover {
+    background-color: #F700FF;
+} */ 
+
+/* 👉 Juntando:
+
+#forms {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+Tradução:
+
+“coloque tudo em coluna e centralize no meio” */
+
+/* 🧠 Resumo mental (isso aqui é ouro)
+
+Sempre pensa assim:
+
+HTML → estrutura (o que é)
+CSS → aparência (como parece)
+JS → comportamento (o que faz) */
